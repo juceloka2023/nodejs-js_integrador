@@ -1,0 +1,32 @@
+/* ************************************************* */
+/* *****     T I P O S   D E   L E T R A S     ***** */
+/* ************************************************* */
+
+@font-face{
+  font-family: "Saira Stencil One";
+  src: url(../fuentes/SairaStencilOne-Regular.ttf);
+}
+@font-face{
+  font-family: "Orbitron";
+  src: url(../fuentes/Orbitron-Regular.ttf);
+}
+@font-face{
+  font-family: "Cookie";
+  src: url(../fuentes/Cookie-Regular.ttf);
+}
+@font-face{
+  font-family: "Roboto";
+  src: url(../fuentes/Roboto-Regular.ttf);
+}
+@font-face{
+  font-family: "Old English";
+  src: url(../fuentes/OldeEnglish.ttf);
+}
+@font-face{
+  font-family: "Orbitron Muy Gruesa";
+  src: url(../fuentes/Orbitron-ExtraBold.ttf);
+}
+@font-face{
+  font-family: "Oswald";
+  src: url(../fuentes/Oswald-VariableFont_wght.ttf);
+}

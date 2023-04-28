@@ -1,0 +1,122 @@
+#Pie{
+  width: 100vw;
+  height: 340px;
+
+  background-image: linear-gradient(rgba(0,0,0,0.9),
+  rgba(0, 0, 0, 0.9)),url(../multimedia/imagenes/funkos-banner.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+
+  background-position: 100% 65%;
+
+  position: absolute; 
+}
+
+#Con_Pie_Grid{
+  display:grid;
+  grid-template-columns: 85% 15%;
+  grid-template-rows: 90% 10%;
+
+  width:100%;
+  height: inherit;
+}
+
+#Grid_Cel1{
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+
+  /* background-color: blue; */
+
+  align-self: center;
+
+  font-family:"Orbitron" ;
+  font-size: 20px;
+  letter-spacing:2px;
+
+  color: white;
+
+}
+
+
+#Grid_Cel2{
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+
+  /* background-color: brown; */
+
+  background-image: url(../multimedia/iconos/branding/isotype.svg);
+  background-position: 50% 50%; 
+  background-repeat: no-repeat;
+
+
+  
+}
+
+#Grid_Cel3{
+  /* background-color: blueviolet; */
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 2; 
+  grid-row-end: 3;
+  
+  place-self: center;
+
+
+}
+
+#Grid_Cel3 #Grid_Cel3_1{
+  font-family: "Cookie";
+  font-size: 25px;
+
+  color: white;
+  letter-spacing: 2px;
+}
+#Grid_Cel3 #Grid_Cel3_2{
+  font-family: "Saira Stencil One";
+  font-size: 20px;
+
+  color: white;
+  letter-spacing: 2px;
+}
+#Grid_Cel3 #Grid_Cel3_3{
+  font-family: "Cookie";
+  font-size: 25px;
+
+  color: white;
+  letter-spacing: 2px;
+}
+#Grid_Cel3 #Grid_Cel3_1::after{
+  content: "Todos los derechos reservados 2023 - ";
+}
+#Grid_Cel3 #Grid_Cel3_2::after{
+  content: "TIENDA FUNKO ";
+}
+#Grid_Cel3 #Grid_Cel3_3::after{
+  content: "& Copia ";
+}
+@font-face{
+  font-family: "Saira Stencil One";
+  src: url(../fuentes/SairaStencilOne-Regular.ttf);
+}
+@font-face{
+  font-family: "Orbitron";
+  src: url(../fuentes/Orbitron-Regular.ttf);
+}
+@font-face{
+  font-family: "Cookie";
+  src: url(../fuentes/Cookie-Regular.ttf);
+}
+ul{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+
+  
+}
+li{
+  padding: 5px 0;
+}

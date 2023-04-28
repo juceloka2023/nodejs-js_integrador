@@ -1,0 +1,42 @@
+/* ***************************************************************** */
+/* *****     C O N F I G U R A C I O N E S   S T A N D A R     ***** */
+/* ***************************************************************** */
+
+.BGR_FND_GR_100{
+  background-color:rgb(100, 100, 100);
+}
+
+.FND_NET_0_05{
+  background-color: rgba(0,0,0,.5);
+}
+
+.BR_CJ_SO_GRT_255_05{
+  box-shadow: 
+  inset 0 0 5px 5px rgba(255,255,255,.5), 
+  0 0 5px 5px rgba(255,255,255,.5);
+}
+
+.BR_CJ_SO_BLNET_255-0_07{
+  box-shadow: 
+  inset 0 0 3px 3px rgba(0,0,0,.7),
+  0 0 3px 3px rgba(255,255,255,.7);
+}
+.BR_CJ_SO_NE_0_07{
+  box-shadow: 
+  inset 0 0 3px 3px rgba(0,0,0,.7); 
+}
+
+.BR_CJ_OU_3_0{
+  border-style: outset;
+  border-width: 3px;
+  border-color: rgb(0,0,0);
+}
+
+.BGR_FND_BL_255{
+  background-color: white;
+}
+
+.TXT_COL_SOM_0_0_05{
+  color:black;
+  text-shadow: 3px 3px 0 rgba(0,0,0,.5);
+}

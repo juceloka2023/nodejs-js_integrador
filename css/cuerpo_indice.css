@@ -1,0 +1,583 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+#Con_Cue_Pri{
+}
+
+#Grid_Gen_Rubro{
+  display:grid;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:"a a b"
+                      "c d d"
+                      "e e f";
+  grid-column-gap: 20px; 
+  grid-row-gap:20px;
+  /* grid-gap:10px; */
+                                             
+  width:100%;
+  height:fit-content;
+
+  padding: 10px;
+
+  justify-content: center;
+}
+
+#Gri_Cel1{
+  grid-area: a;
+  /* background-color: aqua; */
+}
+
+.Con_Gen_Cel_Text{
+  display:grid;
+  align-content:space-around;
+  padding:40px 40px 40px 40px;
+
+  border-radius: 30px;
+}
+
+#Gri_Cel1 #Cel_Tit::after{
+  content: "STAR WARS & \A The Mandalorian" ;
+}
+
+#Gri_Cel1 #Cel_Det_Tit::after{
+  content:"Disfrutá de una saga que sigue \A agregando personajes a su colección";
+}
+
+#Gri_Cel4 #Cel_Det_Tit::after{
+  content:"Atrapa todos los que puedas y disfruta \A de una colección llena de amigos";
+}
+
+#Gri_Cel5 #Cel_Det_Tit::after{
+  content:"Reviví los recuerdos de una saga llena \A de magia y encanto";
+}
+
+#Cel_Sep{
+  border-style: solid;
+  border-width: 4px;
+  border-color: transparent;
+  border-image: repeating-linear-gradient(45deg,
+  rgba(0,0,0,.5) 0%,
+  rgba(255,255,255,.5) 2%,
+  rgba(0,0,0,.5) 4%) 
+  40 stretch;
+
+  width:auto;
+  height: 0px;
+
+  /* margin-right:40px; */
+
+  border-radius: 10px / 10px;
+
+  box-shadow : 0 0 5px 3px rgba(255,255,255,.5);
+}
+
+#Cel_Bot_Ver::after{
+  content:"VER COLECCION";
+
+}
+#Cel_Bot_Ver{
+  background-image: linear-gradient(to top, rgb(50,50,50),rgb(200,200,200),rgb(50,50,50));
+  
+  font-size: 25px;
+  font-family: "Roboto";
+  letter-spacing: 0px;
+  padding:10px 40px;
+  border-radius: 30px;
+
+  width:fit-content;
+
+  text-shadow: -2px -2px 1px rgba(0,0,0,.8),2px 2px 2px rgba(255,255,255,.8);
+  color:rgb(150, 150, 150)
+
+}
+
+
+#Gri_Cel2{
+  grid-area: b;
+  background-image: url(../multimedia/imagenes/star-wars/baby-yoda-1.jpg);
+  /* background-color: burlywood; */
+}
+#Gri_Cel3{
+  grid-area: c;  
+  background-image: url(../multimedia/imagenes/pokemon/pidgeotto-1.jpg);
+  /* background-color: cadetblue; */
+}
+#Gri_Cel4{
+  grid-area: d;
+  /* background-color: chocolate; */
+}
+#Gri_Cel4 #Cel_Tit::after{
+  content:"POKEMON INDIGO";
+}
+
+#Gri_Cel5{
+  grid-area: e;  
+  /* background-color: darkgray; */
+}
+
+#Gri_Cel5 #Cel_Tit::after{
+  content:"HARRY POTTER";
+}
+#Gri_Cel6{
+  grid-area: f;  
+  background-image: url(../multimedia/imagenes/harry-potter/Dumbledore_1.gif);
+  /* background-color: darkkhaki; */
+}
+
+.Param_Cel_Con_Rub_Imagen{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  
+  height:400px;
+  width:100%;
+  /* z-index: 20; */
+
+  border-radius: 30px;
+
+  display:flex;
+  justify-content: center;
+
+}
+
+#Cel_Tit{
+  font-family: "Roboto";
+  
+  font-size: 45px;
+  
+  
+  letter-spacing: 1px;
+  /* margin-right:40px; */
+
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+
+  text-align: center;
+
+} 
+
+#Cel_Tit::after{
+  white-space:pre;
+}
+
+#Cel_Det_Tit{
+  border-radius: 20px;
+  /* margin-right: 40px; */
+  padding: 10px 30px 10px 30px;
+}
+#Cel_Det_Tit::after{
+  font-size: 25px;
+  font-family: "Roboto";
+  /* font-weight: bold; */
+  letter-spacing: 0px;
+  white-space:pre;
+
+}
+
+
+#Con_Ult_Lan{
+}
+
+
+#Tit_Ult_Lan{
+  font-family:"Old English";
+  font-size: 50px;
+  color: rgba(200, 200, 200,1);
+  font-weight: bold;
+  letter-spacing: 2px ;
+  font-style: italic;
+ 
+  text-align: center;
+  text-shadow: -2px -2px 1px rgba(0,0,0,.8),2px 2px 2px rgba(255,255,255,.8);
+
+  border-radius: 60px;
+  
+  padding: 10px 40px;
+
+  background-image: linear-gradient(45deg,
+  rgb(50,50,50) 0%, 
+  rgb(200,200,200) 4%,
+  rgb(50,50,50) 8%) 2 stretch;
+
+  margin: 10px;
+
+}
+#Tit_Ult_Lan::after{
+  content:"Últimos Lanzamientos";
+
+}
+
+#Con_Cue_nuevos{
+  width:100%;
+  height: fit-content;
+
+  overflow: hidden;
+
+}
+/* ******************************************************************* */
+/* *****      C O N T E N E D O R   D E   F L E C H A S   Y      ***** */
+/* *****     R E G U A D R O   D E   D I A P O S I T I V A S     ***** */
+/* ******************************************************************* */
+
+#Pas_Diapositivas{
+  background-image: linear-gradient(to left,
+  rgba(255,255,255,.5) 0,
+  rgba(0,0,0,.5) 33%,
+  rgba(0,0,0,.5) 66%,
+  rgba(255,255,255,.5) 100%);
+  height:400px;
+  width:100%;
+
+  /* display: flex;
+  flex-direction: row; */
+
+  overflow: hidden;
+
+  border-radius: 40px;
+
+  box-shadow: inset 0 0 5px 5px rgba(255,255,255,.5);
+
+}
+
+/* ************************************************************** */
+/* *****      C O N T E N E D O R   D E   F L E C H A S     ***** */
+/* *****        D E R E C H A   E   I Z Q U I E R D A       ***** */
+/* ************************************************************** */
+
+
+#Pas_Dia_Btn_Der, #Pas_Dia_Btn_Izq{
+  height:inherit;
+  width:80px;
+  background-color:rgba(0, 0, 0,.5);
+  position:absolute;
+  z-index:10;
+
+  display:flex;
+  flex-direction: row;
+
+  align-items:center ;
+  justify-content: center;
+}
+#Btn_Der_Chi, #Btn_Izq_Chi{
+
+  width:40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: rgba(0, 0, 0, 1) 2px outset;
+
+  box-shadow:0 -5px 3px 0 rgba(255,255,255,.7),0 5px 3px 0 rgba(0,0,0,.7),-5px 0 3px 0 rgba(125, 125, 125, 0.7),5px 0 3px 0 rgba(125, 125, 125,.7),5px 0 0 0 rgba(255,255,255,.8);
+
+  align-items:center ;
+  justify-content: center;
+
+  display: flex;
+
+}
+#Fle_Der, #Fle_Izq{
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+
+#Pas_Dia_Btn_Izq{
+  left:0;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+#Fle_Izq{
+  border-right: 20px solid rgba(255,255,255,.5);
+}
+#Pas_Dia_Btn_Der{
+  Right:0;
+  top:0;
+  left:auto;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+#Fle_Der{
+  border-left: 20px solid rgba(255,255,255,.5);
+}
+
+
+
+
+
+
+
+
+
+/* ********************************************************* */
+/* *****     R E C U A D R O   C O N T E N E D O R     ***** */
+/* *****         D E   D I A P O S I T I V A S         ***** */
+/* ********************************************************* */
+
+
+
+
+
+#diapositivas{
+  width:100%;
+  /* background-color:transparent; */
+  z-index:8;
+  height: 380px;
+  justify-content: left;
+  /* align-items: center; */
+  background-color: aquamarine;
+
+  display:flex;
+  flex-direction: row;
+
+  overflow: hidden;
+
+  /* box-sizing:inherit; */
+}
+
+
+/* #Btn_Izq_Chi {
+  border-right: 30px solid rgba(255, 255, 255,0.7);
+} */
+/* border: rgba(255, 0, 0, 0.5) 2px solid; */
+/* box-shadow:0 -5px 3px 0 rgba(255,255,255,.7),
+0 5px 3px 0 rgba(0,0,0,.7),
+-5px 0 3px 0 rgba(125, 125, 125, 0.7),
+5px 0 3px 0 rgba(125, 125, 125,.7);
+,5px 0 0 0 rgba(255,255,255,.8) */
+/* ***************************************************************** */
+/* *****     R E C U A D R O   D E   D I A P O S I T I V A     ***** */
+/* ***************************************************************** */
+.diapositiva{
+  height:380px;
+  width:400px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow:0 -4px 2px 0 rgba(255,255,255,.7),
+  0 4px 2px 0 rgba(0,0,0,.7),
+  -4px 0 2px 0 rgba(125, 125, 125, 0.7),
+  4px 0 2px 0 rgba(125, 125, 125,.7),
+  4px 0 0 0 rgba(255,255,255,.8);
+
+  align-items:center;
+  /* justify-content:end; */
+
+  background-image: url(../multimedia/imagenes/star-wars/trooper-1.jpg);
+  background-size:contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  position: relative;
+  /* left:0; */
+
+  /* margin:10px; */
+
+}
+#Diapo_Nuevo{
+  font-size: 16;
+  font-weight: bold;
+  color: white;
+  font-family: "Orbitron Muy Gruesa";
+
+  background-color:red;
+  width:fit-content;
+
+  padding:2px 15px;
+
+  border-radius: 10px;
+  margin-right:5px;
+
+  transform: rotate(15deg);
+
+  right: 0;
+  margin-left:auto;
+  margin-top:20px;
+  margin-bottom: auto;
+} 
+
+#Diapo_Rubro{
+  font-family: "Roboto";
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+
+  /* text-shadow: 2px 2px 2px rgba(255,255,255,.3); */
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+
+
+  background-color: rgba(165, 42, 42,.3);
+
+  width: 94%;
+  height: fit-content;
+
+  padding: 3px 10px;
+  /* margin: 3px auto; */
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow:inset 0 -2px 1px 0 rgba(255,255,255,.7),
+  inset 0 2px 1px 0 rgba(0,0,0,.7) ,
+  inset -2px 0 1px 0 rgba(125, 125, 125, 0.7),
+  inset 2px 0 1px 0 rgba(125, 125, 125,.7);
+
+  border:brown outset 2px;
+
+  position: relative;
+  
+  /* margin-top: auto; */
+  margin-bottom: 5px;  
+  /* bottom:0; */
+
+
+
+}
+#Diapo_Nombre{
+  background-color: rgba(0, 129, 129,.3);
+
+  font-family: "Roboto";
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+  /* text-shadow: 2px 2px 2px rgba(255,255,255,.3); */
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+
+
+  padding: 3px 10px;
+  /* margin: 3px auto; */
+
+  width:94%;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow:inset 0 -2px 1px 0 rgba(255,255,255,.7),
+  inset 0 2px 1px 0 rgba(0,0,0,.7) ,
+  inset -2px 0 1px 0 rgba(125, 125, 125, 0.7),
+  inset 2px 0 1px 0 rgba(125, 125, 125,.7);
+
+  border:rgba(0, 129, 129,1) outset 2px;
+
+  /* position: relative;
+  
+  margin-top: auto;*/
+  margin-bottom: 5px;  
+  /* bottom:0;  */
+
+}
+#Diapo_Con_Precio{
+  display:flex;
+  flex-direction: row;
+
+  background-color: transparent;
+
+  width:94%;
+  height: fit-content;
+
+  border-radius: 20px;
+
+  justify-content:space-between;
+
+  padding: 5px 4px;
+
+  box-shadow:inset 0 -2px 1px 0 rgba(255,255,255,.7),
+  inset 0 2px 1px 0 rgba(0,0,0,.7) ,
+  inset -2px 0 1px 0 rgba(125, 125, 125, 0.7),
+  inset 2px 0 1px 0 rgba(125, 125, 125,.7);
+
+  border:rgba(0, 0, 0,1) outset 2px;
+
+  /* position: relative;
+  
+  margin-top: auto;*/
+  margin-bottom: 5px;   
+  /* bottom:0; */
+
+
+}
+
+#Con_Pre_Ini, #Con_Des, #Con_Pre_Fin{
+
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  font-family: "Roboto";
+
+  background-color:black;
+  width:fit-content;
+
+  padding:2px 15px;
+
+  border-radius: 30px;
+  /* margin-right:auto; */
+
+  text-align: center;
+
+  letter-spacing: 1px;
+}
+#Con_Pre_Ini{
+  background-color:rgba(0, 0, 0,.5);
+} 
+#Con_Des{
+  background-color:rgba(255, 0, 0,.5);
+} 
+#Con_Pre_Fin{
+  background-color:rgba(0, 128, 0,.5);
+}
+
+
+
+
+
+#pre_ini, #Por_Des, #Pre_Fin{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  font-family: "Oswald";
+
+  background-color:white;
+  width:fit-content;
+
+  padding:0px 5px;
+
+  border-radius: 30px;
+  margin-right:0;
+
+  text-align: center;
+
+  letter-spacing: 0;
+  
+}
+
+#Diapo_Oferta{
+  font-size: 16;
+  font-weight: bold;
+  color: rgba(0, 203, 203, 0.5);
+  font-family: "Orbitron Muy Gruesa";
+
+  position: relative;
+  
+  /* margin-top: auto; */
+  /* margin-bottom: 5px;  
+  bottom:0; */
+
+  /* background-color: aquamarine; */
+}
+
+
+
+
+
